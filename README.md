@@ -1071,24 +1071,24 @@ We have provided solutions for the UI, which are [components-ui-pixi](/packages/
 </script>
 
 <App>
-  <UI>
-    {#snippet gameName()}
-      <UiGameName name="LINES GAME" />
-    {/snippet}
-    {#snippet logo()}
-      <Text
-        anchor={{ x: 1, y: 0 }}
-        text="ADD YOUR LOGO"
-        style={{
-          fontFamily: 'proxima-nova',
-          fontSize: REM * 1.5,
-          fontWeight: '600',
-          lineHeight: REM * 2,
-          fill: 0xffffff,
-        }}
-      />
-    {/snippet}
-  </UI>
+<UI>
+	{#snippet gameName()}
+		<UiGameName name="PARIS NOCTURNE" />
+	{/snippet}
+	{#snippet logo()}
+		<Text
+			anchor={{ x: 1, y: 0 }}
+			text="FRENCH GAMBLING"
+			style={{
+				fontFamily: 'proxima-nova',
+				fontSize: REM * 1.2,
+				fontWeight: '600',
+				lineHeight: REM * 1.6,
+				fill: 0xffffff,
+			}}
+		/>
+	{/snippet}
+</UI>
 </App>
 
 <Modals>
