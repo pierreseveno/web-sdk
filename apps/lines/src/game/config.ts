@@ -1,7 +1,7 @@
 export default {
-	providerName: 'sample_provider',
-	gameName: 'sample_lines',
-	gameID: '0_0_lines',
+	providerName: 'french_gambling',
+	gameName: 'paris_lights',
+	gameID: 'fg_paris_lights',
 	rtp: 0.97,
 	numReels: 5,
 	numRows: [3, 3, 3, 3, 3],
@@ -126,6 +126,7 @@ export default {
 			],
 		},
 		W: {
+			// TODO(paris-lights): Keep Wild payout for current engine compatibility until final math balancing.
 			paytable: [
 				{
 					'5': 20,
@@ -6566,3 +6567,4 @@ export default {
 		],
 	},
 };
+

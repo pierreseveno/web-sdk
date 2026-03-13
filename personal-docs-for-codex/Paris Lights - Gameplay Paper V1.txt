@@ -1,0 +1,184 @@
+# Paris Lights - Gameplay Paper V1
+
+**Provider:** French Gambling  
+**Game Name:** Paris Lights  
+**Format:** Video slot, 5 reels x 3 rows  
+**Lines:** 20 fixed lines  
+**UI Language:** English  
+**Theme:** Elegant Paris by night, iconic landmarks and luxury symbols  
+**Wild:** Golden Paris Emblem  
+**Scatter:** Illuminated Eiffel Tower  
+**Bonus:** Free Spins with expanding global multiplier via Street Lanterns  
+
+## Pitch du jeu
+
+A premium Paris-themed slot built around iconic landmarks, refined luxury objects and a clean, readable bonus structure.  
+The base game delivers classic line wins across a stylish 5x3 layout, while Free Spins build momentum through Street Lantern symbols that increase a persistent global multiplier.
+
+## Structure de jeu
+
+- 5 reels
+- 3 rows
+- 20 fixed paylines
+- Wins are paid on fixed lines only
+- Winning combinations pay from left to right
+- Only adjacent reels starting from reel 1 count for line wins
+- Standard line wins are formed by 3, 4 or 5 matching symbols
+- If multiple wins occur, all valid line wins are paid
+- For the same symbol on the same payline, only the highest win is paid
+
+## Liste des symboles
+
+### Specials
+
+- **Wild:** Golden Paris Emblem
+- **Scatter:** Illuminated Eiffel Tower
+
+### Premium symbols
+
+- Arc de Triomphe
+- Louvre Pyramid
+- Perfume Bottle
+- Seine Cruise
+
+### Medium symbols
+
+- Metro Sign
+- Street Lantern
+- Champagne Glass
+- Macaron Box
+
+### Low symbols
+
+- Heart
+- Diamond
+- Club
+- Spade
+
+**Direction visuelle des low symbols:**  
+Jewelry / art deco card symbols, designed for maximum readability and an upscale slot feel.
+
+## Règles des symboles spéciaux
+
+### Wild
+
+- Substitutes for all symbols except Scatter
+- Can help complete line wins
+- Has no separate payout table of its own in V1 unless added later
+
+### Scatter
+
+- Appears on any reel
+- Does not need to follow paylines
+- Triggers the bonus when enough Scatters land anywhere on the board
+- For V1, Scatter is used to trigger Free Spins only
+- No separate scatter pay in base game for now
+
+Ça, c’est volontairement sobre. On évite d’empiler des exceptions décoratives avant même d’avoir un squelette jouable.
+
+## Bonus Rules
+
+### Free Spins Trigger
+
+- 3 Scatters = 10 Free Spins
+- 4 Scatters = 12 Free Spins
+- 5 Scatters = 15 Free Spins
+
+### Bonus Core Rule
+
+During Free Spins, each Street Lantern adds +1 to the global multiplier.
+
+### Exact bonus behavior
+
+- The feature starts at x1
+- At the end of each Free Spin reveal, count all Street Lanterns visible on the final board
+- Each Lantern adds +1 to the global multiplier
+- The multiplier increase is persistent for the rest of the feature
+- The spin’s wins are paid using the updated current multiplier
+- Multiple Lanterns on the same spin stack
+
+**Example:**
+- bonus starts at x1
+- 2 Lanterns land on a spin
+- multiplier becomes x3
+- that spin’s total win is paid at x3
+
+- For V1: no retrigger during Free Spins
+
+Le “no retrigger” est un bon choix ici. C’est plus simple pour la structure, plus simple pour le test, plus simple pour le futur équilibrage. Les humains adorent ajouter des couches avant d’avoir un sol.
+
+## Simplified Paytable
+
+### Premium Symbols
+
+- 5 of a kind = high payout
+- 4 of a kind = medium-high payout
+- 3 of a kind = medium payout
+
+### Medium Symbols
+
+- 5 of a kind = medium payout
+- 4 of a kind = low-medium payout
+- 3 of a kind = low payout
+
+### Low Symbols
+
+- 5 of a kind = low payout
+- 4 of a kind = very low payout
+- 3 of a kind = minimum payout
+
+## Relative payout hierarchy
+
+### Premiums
+
+Highest to lowest:
+
+1. Arc de Triomphe
+2. Louvre Pyramid
+3. Perfume Bottle
+4. Seine Cruise
+
+### Mediums
+
+Highest to lowest:
+
+1. Street Lantern
+2. Champagne Glass
+3. Metro Sign
+4. Macaron Box
+
+### Lows
+
+All low symbols are classic low-value card icons:
+
+- Heart
+- Diamond
+- Club
+- Spade
+
+Ils peuvent être soit équivalents en payout, soit légèrement hiérarchisés plus tard. Pour la V1 papier, je recommande équivalents. C’est plus net.
+
+## Ton visuel appliqué au gameplay
+
+- Elegant
+- Premium
+- Readable first
+- Paris by night
+- Dark blue and gold foundation
+- Bright landmark symbols with polished luxury highlights
+- Street Lantern treated as the bonus power symbol
+- Background should support the game, not overwhelm symbol readability
+
+## Ce que cette étape verrouille officiellement
+
+- Layout: 5x3
+- Paylines: 20 fixed lines
+- Game type: classic lines slot
+- Specials: Wild + Scatter
+- Scatter role: trigger only
+- Bonus structure: fixed free spins + persistent global multiplier
+- Lantern rule: every visible Lantern during bonus adds +1
+- No retrigger in V1
+- No exact RTP target yet
+- No exact numeric paytable yet
+- Structure first, balancing later

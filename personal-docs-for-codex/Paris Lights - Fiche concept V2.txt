@@ -1,0 +1,65 @@
+﻿# Paris Lights - Fiche concept V2
+**Provider:** French Gambling  
+**Game Name:** Paris Lights  
+**Format:** Video slot, 5 reels x 3 rows  
+**Lines:** 20 fixed lines  
+**UI Language:** English  
+**Theme:** Elegant Paris by night, iconic landmarks and luxury symbols  
+**Wild:** Golden Paris Emblem  
+**Scatter:** Illuminated Eiffel Tower  
+**Bonus:** Free Spins with expanding global multiplier via Street Lanterns
+## Pitch du jeu
+A stylish Parisian slot set in a glowing night-time city of elegance, luxury and iconic landmarks.  
+Each spin celebrates the most recognizable symbols of Paris, from grand monuments to refined objects, in a premium and readable slot experience. During Free Spins, Street Lanterns build a growing global multiplier, turning the city lights into a rising win feature.
+## Liste des symboles
+### Specials
+- **Wild:** Golden Paris Emblem
+- **Scatter:** Illuminated Eiffel Tower
+### Premium symbols
+- Arc de Triomphe
+- Louvre Pyramid
+- Perfume Bottle
+- Seine Cruise
+### Medium symbols
+- Street Lantern
+- Champagne Glass
+- Metro Sign
+- Macaron Box
+### Low symbols
+- Heart
+- Diamond
+- Club
+- Spade
+**Direction visuelle des low symbols:**  
+Jewelry-inspired art deco card icons, designed to stay elegant, clear and slot-readable.
+## Mécanique bonus
+### Free Spins Feature
+- **3 Scatters** = **10 Free Spins**
+- **4 Scatters** = **12 Free Spins**
+- **5 Scatters** = **15 Free Spins**
+### Bonus rule
+- During Free Spins, each **Street Lantern** adds **+1 to the global multiplier**
+- The bonus starts at **x1**
+- Each Lantern increases the multiplier permanently for the rest of the feature
+- All wins during Free Spins are paid with the current global multiplier
+**Idée clé pour la V2 :**  
+The bonus should feel like the city lights are intensifying with every Lantern collected, building momentum and value in a simple and satisfying way.
+## Ton visuel
+- Elegant, premium, cinematic
+- Paris by night, simplified and iconic rather than narrative-heavy
+- Luxurious atmosphere with gold light, dark blue depth and polished highlights
+- Strong slot readability before visual complexity
+- Landmarks and luxury objects presented with a clean, upscale finish
+- Background focused on Paris skyline and city glow rather than territorial storytelling
+## Palette couleur
+### Core palette
+- Midnight Navy: `#0E1A2B`
+- Royal Blue: `#1A3C6E`
+- Antique Gold: `#C9A24A`
+- Warm Ivory: `#E8E1D4`
+- Deep Charcoal: `#1A1A1A`
+### Accent palette
+- Champagne Gold: `#D8B56A`
+- Lantern Glow: `#F4C95D`
+- Paris Night Blue: `#2B5D8A`
+- Rose Burgundy: `#7A2E3A`

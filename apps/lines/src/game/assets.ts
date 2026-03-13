@@ -13,6 +13,21 @@ export default {
 		src: new URL('../../assets/sprites/pressToContinueText/MM_pressanywhere.json', import.meta.url).href,
 		preload: true,
 	},
+	parisBackground: {
+		type: 'sprite',
+		src: '/paris-nocturne/backgrounds/bg_main_paris_night_v1.png',
+		preload: true,
+	},
+	providerFrenchGamblingMonogram: {
+		type: 'sprite',
+		src: '/paris-nocturne/provider/fg_provider_monogram.png.png',
+		preload: true,
+	},
+	providerFrenchGamblingMark: {
+		type: 'sprite',
+		src: '/paris-nocturne/provider/fg_provider_mark.png.png',
+		preload: true,
+	},
 	H1: {
 		type: 'spine',
 		src: {
@@ -274,3 +289,4 @@ export default {
 		preload: true,
 	},
 } as const;
+

@@ -1,10 +1,12 @@
 <script lang="ts">
+	import { BitmapText } from 'pixi-svelte';
+
+	import { PARIS_LIGHTS_RUNTIME_SYMBOLS } from '../game/symbolCatalog';
+	import { getContext } from '../game/context';
+	import type { SymbolState, RawSymbol } from '../game/types';
+	import { getSymbolInfo } from '../game/utils';
 	import SymbolSpine from './SymbolSpine.svelte';
 	import SymbolSprite from './SymbolSprite.svelte';
-	import { getSymbolInfo } from '../game/utils';
-	import type { SymbolState, RawSymbol } from '../game/types';
-	import { getContext } from '../game/context';
-	import { BitmapText } from 'pixi-svelte';
 
 	type Props = {
 		x?: number;
@@ -29,7 +31,10 @@
 		{symbolInfo}
 		x={props.x}
 		y={props.y}
-		showWinFrame={props.state === 'win' && !['S', 'M'].includes(props.rawSymbol.name)}
+		showWinFrame={props.state === 'win' &&
+			![PARIS_LIGHTS_RUNTIME_SYMBOLS.SCATTER_ILLUMINATED_EIFFEL_TOWER, 'M'].includes(
+				props.rawSymbol.name,
+			)}
 		listener={{
 			complete: props.oncomplete,
 			event: (_, event) => {

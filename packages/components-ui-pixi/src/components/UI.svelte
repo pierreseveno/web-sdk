@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import type { ButtonProps } from 'components-pixi';
 
 	import { stateUi } from 'state-shared';
 
@@ -9,6 +10,7 @@
 	type Props = {
 		gameName: Snippet;
 		logo: Snippet;
+		buttonBuyBonus?: Snippet<[Partial<ButtonProps>]>;
 	};
 
 	const props: Props = $props();
@@ -29,4 +31,11 @@
 	{#snippet logo()}
 		{@render props.logo()}
 	{/snippet}
+
+	{#if props.buttonBuyBonus}
+		{#snippet buttonBuyBonus(buttonProps)}
+			{@render props.buttonBuyBonus(buttonProps)}
+		{/snippet}
+	{/if}
 </UIComponent>
+

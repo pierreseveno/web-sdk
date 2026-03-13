@@ -1,4 +1,7 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
+	import type { ButtonProps } from 'components-pixi';
+
 	import { EnableSpaceHold } from 'components-shared';
 
 	import UiFadeContainer from './UiFadeContainer.svelte';
@@ -22,6 +25,7 @@
 	type Props = {
 		gameName: LayoutUiProps['gameName'];
 		logo: LayoutUiProps['logo'];
+		buttonBuyBonus?: Snippet<[Partial<ButtonProps>]>;
 	};
 
 	const props: Props = $props();

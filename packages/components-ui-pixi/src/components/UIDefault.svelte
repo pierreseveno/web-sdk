@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import type { ButtonProps } from 'components-pixi';
 
 	import { getContextLayout } from 'utils-layout';
 	import { EnableSpaceHold } from 'components-shared';
@@ -28,6 +29,7 @@
 	type Props = {
 		gameName: Snippet;
 		logo: Snippet;
+		buttonBuyBonus?: Snippet<[Partial<ButtonProps>]>;
 	};
 
 	const props: Props = $props();
@@ -69,7 +71,11 @@
 		{/snippet}
 
 		{#snippet buttonBuyBonus(buttonProps)}
-			<ButtonBuyBonus {...buttonProps} />
+			{#if props.buttonBuyBonus}
+				{@render props.buttonBuyBonus(buttonProps)}
+			{:else}
+				<ButtonBuyBonus {...buttonProps} />
+			{/if}
 		{/snippet}
 
 		{#snippet buttonBet(buttonProps)}

@@ -70,7 +70,7 @@
 			})}
 		>
 			<BitmapText
-				text={'FREE SPIN'}
+				text={'FREE SPINS'}
 				style={{
 					fontFamily: 'gold',
 					fontSize,
@@ -91,3 +91,4 @@
 		</Container>
 	</FadeContainer>
 </MainContainer>
+

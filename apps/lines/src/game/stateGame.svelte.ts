@@ -19,9 +19,10 @@ import {
 	INITIAL_SYMBOL_STATE,
 	SCATTER_LAND_SOUND_MAP,
 } from './constants';
+import { PARIS_LIGHTS_RUNTIME_SYMBOLS } from './symbolCatalog';
 
 const onSymbolLand = ({ rawSymbol }: { rawSymbol: RawSymbol }) => {
-	if (rawSymbol.name === 'S') {
+	if (rawSymbol.name === PARIS_LIGHTS_RUNTIME_SYMBOLS.SCATTER_ILLUMINATED_EIFFEL_TOWER) {
 		eventEmitter.broadcast({ type: 'soundScatterCounterIncrease' });
 		eventEmitter.broadcast({
 			type: 'soundOnce',
@@ -29,7 +30,7 @@ const onSymbolLand = ({ rawSymbol }: { rawSymbol: RawSymbol }) => {
 		});
 	}
 
-	if (rawSymbol.name === 'W') {
+	if (rawSymbol.name === PARIS_LIGHTS_RUNTIME_SYMBOLS.WILD_GOLDEN_PARIS_EMBLEM) {
 		eventEmitter.broadcast({
 			type: 'soundOnce',
 			name: 'sfx_multiplier_landing',
@@ -111,3 +112,4 @@ export const stateGameDerived = {
 	enhancedBoard,
 	getWinLevelDataByWinLevelAlias,
 };
+

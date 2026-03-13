@@ -1,34 +1,34 @@
 <script lang="ts">
-	import { Rectangle, SpineProvider, SpineTrack } from 'pixi-svelte';
-	import { FadeContainer } from 'components-pixi';
-	import { SECOND } from 'constants-shared/time';
+	import { Rectangle, Sprite } from 'pixi-svelte';
 
 	import { getContext } from '../game/context';
 
+	const PARIS_BACKGROUND_RATIO = 1536 / 1024;
+
 	const context = getContext();
-	const backgroundProps = $derived(
-		context.stateLayoutDerived.normalBackgroundLayout({ scale: 0.5 }),
-	);
-	const showBaseBackground = $derived(context.stateGame.gameType === 'basegame');
-	const showFeatureBackground = $derived(context.stateGame.gameType === 'freegame');
+	const parisBackgroundProps = $derived.by(() => {
+		const { width, height } = context.stateLayoutDerived.canvasSizes();
+		const canvasRatio = width / (height || 1);
+
+		if (canvasRatio > PARIS_BACKGROUND_RATIO) {
+			return {
+				x: width * 0.5,
+				y: height * 0.5,
+				width,
+				height: width / PARIS_BACKGROUND_RATIO,
+				anchor: 0.5,
+			};
+		}
+
+		return {
+			x: width * 0.5,
+			y: height * 0.5,
+			width: height * PARIS_BACKGROUND_RATIO,
+			height,
+			anchor: 0.5,
+		};
+	});
 </script>
 
-<Rectangle {...context.stateLayoutDerived.canvasSizes()} backgroundColor={0x000000} zIndex={-3} />
-
-<FadeContainer show={showBaseBackground} duration={SECOND} zIndex={-2}>
-	<SpineProvider key="foregroundAnimation" {...backgroundProps}>
-		<SpineTrack trackIndex={0} animationName={'idle'} loop />
-	</SpineProvider>
-	<SpineProvider key="foregroundAnimation" {...backgroundProps}>
-		<SpineTrack trackIndex={0} animationName={'dust'} loop />
-	</SpineProvider>
-</FadeContainer>
-
-<FadeContainer show={showFeatureBackground} duration={SECOND} zIndex={-1}>
-	<SpineProvider key="foregroundFeatureAnimation" {...backgroundProps}>
-		<SpineTrack trackIndex={0} animationName={'idle'} loop />
-	</SpineProvider>
-	<SpineProvider key="foregroundFeatureAnimation" {...backgroundProps}>
-		<SpineTrack trackIndex={0} animationName={'dust'} loop />
-	</SpineProvider>
-</FadeContainer>
+<Rectangle {...context.stateLayoutDerived.canvasSizes()} backgroundColor={0x000000} zIndex={-4} />
+<Sprite key="parisBackground" {...parisBackgroundProps} zIndex={-3} />
